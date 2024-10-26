@@ -4,34 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Página Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #0c0c0c;
+            color: #FFA500;
+            text-align: center;
+            padding: 1.5em;
+        }
+        section {
+            background-color: white;
+            margin: 1em auto;
+            padding: 2em;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(8, 8, 8, 0.1);
+        }
+        h1, h2 {
+            color: #f03e07;
+        }
+        ul {
+            list-style-type: square;
+        }
+        a {
+            color: #2600ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+        }
+        .logo {
+            flex: 1;
+            text-align: right;
+        }
+        .right-image {
+            max-width: 200px;
+            height: auto;
+        }
+        .profile-img-container {
+            flex: 1;
+            text-align: left;
+        }
+        .profile-img {
+            border-radius: 50%;
+            width: 150px;
+            height: 170px;
+            border: 3px solid #FFA500;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #030303;
+            color: #FFA500;
+            margin-top: 1em;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Bienvenido a Mi Página Personal</h1>
     </header>
-    <section>
-        <h2>Datos Generales:</h2>
-        <p><strong>Nombre:</strong> Rodrigo Andre Ccallo Apaza</p>
-        <p><strong>Fecha de nacimiento:</strong> 05 de diciembre del 2006</p>
-        <p><strong>Colegio:</strong> Salesiano Don Bosco</p>
-        <p><strong>Universidad:</strong> Católica San Pablo</p>
-        <p><strong>Carrera:</strong> Ciencias de la Computación</p>
+    <section class="flex-container">
+        <!-- Imagen en la parte superior izquierda -->
+        <div class="profile-img-container">
+            <img src="Foto.jpg" alt="Foto de perfil" class="profile-img">
+        </div>
+        <!-- Imagen de la universidad a la derecha -->
+        <div class="logo">
+            <img src="191551.png" alt="Logo de la Universidad" class="right-image">
+        </div>
     </section>
     <section>
         <h2>Cursos Realizados</h2>
         <ul>
-            <li>Matematica 1</li>
-            <li>Estructuras discretas 1</li>
-            <li>Programacion de videojuegos</li>
+            <li>Matemática 1</li>
+            <li>Estructuras Discretas 1</li>
+            <li>Programación de Videojuegos</li>
         </ul>
     </section>
     <section>
-        <h2>Compañeros de Grupo</h2>
+        <h2>Complementaciones</h2>
+        <ul>
+            <li>Nivel de Inglés B1</li>
+            <li>Certificado de Curso de Programación en C++</li>
+            <li>Certificado Curso de Programación en Python Cisco</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Compañeros</h2>
         <ul>
             <li><a href="https://pagina-companero1.com" target="_blank">Paolo Avalos</a></li>
-            <li><a href="https://pagina-companero2.com" target="_blank">Joaquin Nuñez</a></li>
+            <li><a href="https://pagina-companero2.com" target="_blank">Joaquín Nuñez</a></li>
             <li><a href="https://pagina-companero3.com" target="_blank">Gabriel Noguera</a></li>
         </ul>
     </section>
+    <footer>
+        <p>© 2024 Rodrigo Andre Ccallo Apaza - Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
